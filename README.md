@@ -1,8 +1,42 @@
 # phpDocker
 php docker file
 
-#依赖
+ ## 依赖
 - php:5.6-cli
 
-#包含扩展
- - pdo_mysql
+ ## 包含扩展
+- ctype
+- curl
+- date
+- dom
+- ereg
+- fileinfo
+- filter
+- ftp
+- hash
+- iconv
+- json
+- libxml
+- mbstring
+- mhash
+- mysqlnd
+- openssl
+- pcre
+- PDO
+- pdo_mysql
+- pdo_sqlite
+- Phar
+- posix
+- readline
+- redis
+- Reflection
+- session
+- SimpleXML
+- SPL
+- sqlite3
+- standard
+- tokenizer
+- xml
+- xmlreader
+- xmlwriter
+- zlib
