@@ -1,7 +1,8 @@
 # phpDocker
 php docker file
+php: 5.6
 
- ## 依赖
+ ## 依赖镜像
 - php:5.6-cli
 
  ## 包含扩展
@@ -18,6 +19,7 @@ php docker file
 - json
 - libxml
 - mbstring
+- mcrypt
 - mhash
 - mysqlnd
 - openssl
@@ -40,3 +42,7 @@ php docker file
 - xmlreader
 - xmlwriter
 - zlib
+
+  ## todo list
+  - add gd ext
+  - add imagemagic ext
