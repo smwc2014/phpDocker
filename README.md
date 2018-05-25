@@ -2,10 +2,17 @@
 php docker file
 php: 5.6
 
- ## 依赖镜像
-- php:5.6-cli
+  ## 依赖镜像
+  - php:5.6-cli
 
- ## 包含扩展
+  ## 使用
+1. build
+> docker build -t your/image/name /docker/file/path
+2. run
+> docker run -it -p 8100:8100 --name your_container_name -v /your/code/path:/www your/image/name
+  ## 包含扩展
+
+
 - ctype
 - curl
 - date
@@ -43,6 +50,6 @@ php: 5.6
 - xmlwriter
 - zlib
 
-  ## todo list
-  - add gd ext
-  - add imagemagic ext
+## todo list
+- add gd ext
+- add imagemagic ext
