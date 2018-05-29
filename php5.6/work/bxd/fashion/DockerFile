@@ -1,0 +1,4 @@
+FROM php5.6
+RUN apt-get update \
+    && apt-get install -y \
+    libpre
