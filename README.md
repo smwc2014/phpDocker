@@ -9,7 +9,9 @@ php: 5.6
 1. build
 > docker build -t your/image/name /docker/file/path
 2. run
-> docker run -it -p 8100:8100 --name your_container_name -v /your/code/path:/www your/image/name
+> docker run -d -p 8100:8100 --name your_container_name -v /your/code/path:/www your/image/name
+3. enter docker
+> docker run -it --name your_container_name your/image/name
   ## 包含扩展
 
 
