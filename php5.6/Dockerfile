@@ -19,6 +19,7 @@ RUN apt-get update \
     && docker-php-ext-enable redis \
     && docker-php-ext-install mcrypt \
     && echo "date.timezone = \"Asia/Shanghai\"">>/usr/local/etc/php/conf.d/custom_php.ini \
+    && echo "error_reporting = E_ALL">>/usr/local/etc/php/conf.d/custom_php.ini \
     && rm -rf /tmp/phpredis-2.2.8 && rm -f /tmp/redis.tar.gz \
     && rm -rf /tmp/libmcrypt-2.5.8 && rm -f /tmp/libmcrypt.tar.gz
 CMD ["ping", "127.0.0.1"]
