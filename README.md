@@ -11,7 +11,7 @@ php: 5.6
 2. run
 > docker run -d -p 8100:8100 --name your_container_name -v /your/code/path:/www your/image/name
 3. enter docker
-> docker run -it --name your_container_name your/image/name
+> docker exec -it your_container_id /bin/bash
   ## 包含扩展
 
 
