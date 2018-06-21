@@ -15,6 +15,7 @@ php: 5.6
   ## 包含扩展
 
 
+- bcmath
 - ctype
 - curl
 - date

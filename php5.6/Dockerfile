@@ -14,6 +14,7 @@ RUN apt-get update \
     && docker-php-ext-install pdo_mysql \
     && docker-php-ext-install ftp \
     && docker-php-ext-install gd \
+    && docker-php-ext-install bcmath \
     && cd /tmp && tar zxvf redis.tar.gz && cd phpredis-2.2.8/ && phpize && ./configure && make && make install \
     && cd /tmp && tar zxvf libmcrypt.tar.gz && cd libmcrypt-2.5.8/ && ./configure && make && make install \
     && docker-php-ext-enable redis \
