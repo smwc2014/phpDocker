@@ -13,6 +13,7 @@ RUN apt-get update \
         imagemagick \
         iputils-ping \
         procps \
+        libreoffice \
     && docker-php-ext-install pdo_mysql \
     && docker-php-ext-install ftp \
     && docker-php-ext-install gd \
