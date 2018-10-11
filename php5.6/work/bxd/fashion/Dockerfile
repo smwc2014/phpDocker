@@ -2,7 +2,8 @@ FROM php:5.6-cli
 ADD https://github.com/phpredis/phpredis/archive/2.2.8.tar.gz /tmp/redis.tar.gz
 ADD https://sourceforge.net/projects/mcrypt/files/Libmcrypt/2.5.8/libmcrypt-2.5.8.tar.gz/download /tmp/libmcrypt.tar.gz
 ADD http://pecl.php.net/get/zip-1.12.5.tgz /tmp/zip.tgz
-RUN apt-get update \
+RUN mkdir -p /usr/share/man/man1 \
+    && apt-get update \
     && apt-get install -y \
         vim \
         mysql-client \
