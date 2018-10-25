@@ -12,6 +12,7 @@ php: 5.6
 > docker run -d -p 8100:8100 --name your_container_name -v /your/code/path:/www your/image/name
 3. enter docker
 > docker exec -it your_container_id /bin/bash
+> docker exec -it -e LINES=$(tput lines) -e COLUMNS=$(tput cols) your_container_id bash
   ## 包含扩展
 
 
