@@ -54,6 +54,7 @@ php: 5.6
 - xmlreader
 - xmlwriter
 - zlib
+- pcntl
 
 ## todo list
 - add gd ext

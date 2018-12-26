@@ -19,6 +19,7 @@ RUN mkdir -p /usr/share/man/man1 \
     && docker-php-ext-install ftp \
     && docker-php-ext-install gd \
     && docker-php-ext-install bcmath \
+    && docker-php-ext-install pcntl \
     && cd /tmp && tar zxvf redis.tar.gz && cd phpredis-2.2.8/ && phpize && ./configure && make && make install \
     && cd /tmp && tar zxvf libmcrypt.tar.gz && cd libmcrypt-2.5.8/ && ./configure && make && make install \
     && cd /tmp && tar zxvf zip.tgz && cd zip-1.12.5/ && phpize && ./configure && make && make install \
