@@ -1,0 +1,15 @@
+version: '3'
+services: 
+  web:
+    image: nginx:1.14
+    volumes:
+      - ./nginx/mysite.conf:/etc/nginx/conf.d/mysite.conf
+      - ./public/:/data/www/
+    ports:
+      - "8080:80"
+    links:
+      - php
+  php:
+    image: php:5.6-fpm
+    volumes:
+      - ./public/:/data/www/
